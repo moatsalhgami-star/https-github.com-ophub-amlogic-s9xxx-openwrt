@@ -1,0 +1,73 @@
+.config
+CONFIG_TARGET_ipq40xx=y
+CONFIG_TARGET_ipq40xx_generic=y
+CONFIG_TARGET_ipq40xx_generic_DEVICE_giga_kt-9200=y
+
+# Kernel
+CONFIG_LINUX_5_15=y
+
+# Base system
+CONFIG_PACKAGE_base-files=y
+CONFIG_PACKAGE_busybox=y
+CONFIG_PACKAGE_procd=y
+CONFIG_PACKAGE_ubus=y
+CONFIG_PACKAGE_uci=y
+
+# LuCI
+CONFIG_PACKAGE_luci=y
+CONFIG_PACKAGE_luci-base=y
+CONFIG_PACKAGE_luci-mod-admin-full=y
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+
+# Network
+CONFIG_PACKAGE_netifd=y
+CONFIG_PACKAGE_firewall4=y
+CONFIG_PACKAGE_ip-full=y
+CONFIG_PACKAGE_iptables-nft=y
+
+# DNS / DHCP
+CONFIG_PACKAGE_dnsmasq-full=y
+CONFIG_PACKAGE_odhcpd-ipv6only=y
+CONFIG_PACKAGE_odhcpd=y
+
+# Adblock
+CONFIG_PACKAGE_adblock=y
+CONFIG_PACKAGE_luci-app-adblock=y
+
+# Wireless
+CONFIG_PACKAGE_kmod-ath=y
+CONFIG_PACKAGE_kmod-ath10k=y
+CONFIG_PACKAGE_ath10k-firmware-qca4019=y
+CONFIG_PACKAGE_wireless-regdb=y
+CONFIG_PACKAGE_wpad-basic-mbedtls=y
+
+# Ethernet / Switch
+CONFIG_PACKAGE_kmod-qca8k=y
+CONFIG_PACKAGE_kmod-dsa-qca=y
+
+# USB
+CONFIG_PACKAGE_kmod-usb-core=y
+CONFIG_PACKAGE_kmod-usb2=y
+CONFIG_PACKAGE_kmod-usb3=y
+
+# Filesystems
+CONFIG_PACKAGE_kmod-fs-squashfs=y
+CONFIG_PACKAGE_kmod-fs-ubifs=y
+CONFIG_PACKAGE_ubi-utils=y
+CONFIG_TARGET_ROOTFS_SQUASHFS=y
+CONFIG_TARGET_UBIFS=y
+
+# Utilities
+CONFIG_PACKAGE_htop=y
+CONFIG_PACKAGE_ca-bundle=y
+CONFIG_PACKAGE_curl=y
+CONFIG_PACKAGE_wget-ssl=y
+
+# Image options
+CONFIG_TARGET_IMAGES_GZIP=y
+
+# Disable unneeded heavy packages
+# CONFIG_PACKAGE_ppp is not set
+# CONFIG_PACKAGE_ppp-mod-pppoe is not set
+# CONFIG_PACKAGE_luci-app-upnp is not set
+# CONFIG_PACKAGE_sqm-scripts is not set
